@@ -79,3 +79,6 @@ header {
 .sidebar:hover .menu-item span {
     opacity: 1;
 }
+main{
+    background: linear-gradient(to bottom right, #637c7d, #0d1c2b);
+}

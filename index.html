@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="media/rh-logo.png" alt="logo" height="40px"></a></div>
+        <div class="logo"><a href="index.html"><img src="media/logo.png" alt="logo" height="50px"></a></div>
         <div class="header-icons">
-            <div class="dark-mode "><a href="#"><img src="media/icons/moon.png" alt="dark" height="30px"></a></div>
+            <!-- <div class="dark-mode "><a href="#"><img src="media/icons/moon.png" alt="dark" height="30px"></a></div> -->
             <div class="user-icon"><a href="user.html"><img src="media/icons/user.png" alt="user" height="30px"></a></div>
         </div>
     </header>
@@ -46,8 +46,8 @@
                 <div class="topBanner position-relative w-100">
                     <img src="media/banner.png" alt="" class="position-absolute" height="200px" width="100%">
                     <div class="text position-absolute">
-                        <h1>Here Company Name</h1>
-                        <p>Little discription about this Company Little discription about this Company</p>
+                        <h1>MD. Ali Hossain</h1>
+                        <p>This is my data entry and data storing website.</p>
                     </div>
                 </div>
                 <!-- data entry form  -->
@@ -57,30 +57,29 @@
                             <div class="col-md-6">
                                 <div class="card shadow-sm p-4 bg">
                                     <h2 class="text-center mb-4">Medical Examination Form</h2>
-                                    <form action="#" method="POST" >
+                                    <form id="dataForm">
                                         <div class="mb-3">
-                                            <label for="date" class="form-label">Date</label>
-                                            <input type="date" id="date" name="date" class="form-control border-black">
+                                            <label for="date" class="form-label">Date*</label>
+                                            <input type="date" id="date" name="date" class="form-control border-black" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="id" class="form-label">ID</label>
+                                            <label for="id" class="form-label">ID*</label>
                                             <input type="text" id="id" name="id" class="form-control border-black" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="name" class="form-label">Name</label>
+                                            <label for="name" class="form-label">Name*</label>
                                             <input type="text" id="name" name="name" class="form-control border-black" required >
                                         </div>
                                         <div class="mb-3">
-                                            <label for="passport" class="form-label">Passport Number</label>
+                                            <label for="passport" class="form-label">Passport Number*</label>
                                             <input type="text" id="passport" name="passport" class="form-control border-black" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="agent" class="form-label">Agent</label>
+                                            <label for="agent" class="form-label">Agent*</label>
                                             <input type="text" id="agent" name="agent" class="form-control border-black">
                                         </div>
                                         <div class="mb-3">
                                             <label for="physical" class="form-label m-0">Physical Examination</label><br>
-                                            <!-- <input type="text" id="physical" name="physical" class="form-control m-0"> -->
                                             <select name="physical" id="physical" class="w-100">
                                                 <option value="FIT">FIT</option>
                                                 <option value="UNFIT">UNFIT</option>
@@ -88,7 +87,6 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="radiology" class="form-label m-0">Radiology</label>
-                                            <!-- <input type="text" id="radiology" name="radiology" class="form-control m-0"> -->
                                             <select name="radiology" id="radiology" class="w-100">
                                                 <option value="FIT">FIT</option>
                                                 <option value="UNFIT">UNFIT</option>
@@ -96,16 +94,7 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="laboratory" class="form-label m-0 ">Laboratory</label>
-                                            <!-- <input type="text" id="laboratory" name="laboratory" class="form-control m-0 "> -->
                                             <select name="laboratory" id="laboratory" class="w-100">
-                                                <option value="FIT">FIT</option>
-                                                <option value="UNFIT">UNFIT</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="final" class="form-label m-0 ">Final Report</label>
-                                            <!-- <input type="text" id="final" name="final" class="form-control m-0 "> -->
-                                            <select name="" id="" class="w-100">
                                                 <option value="FIT">FIT</option>
                                                 <option value="UNFIT">UNFIT</option>
                                             </select>
@@ -114,7 +103,12 @@
                                             <label for="remarks" class="form-label">Remarks</label>
                                             <textarea id="remarks" name="remarks" class="form-control border-black" rows="2"></textarea>
                                         </div>
-                
+                                        
+                                        <div class="mb-3">
+                                            <label for="agentRate" class="form-label">Agent Rate*</label>
+                                            <input type="text" id="agentRate" name="agentRate" class="form-control border-black" required>
+                                        </div>
+
                                         <button type="submit" class="btn btn-primary w-100">Submit</button>
                                     </form>
                                 </div>

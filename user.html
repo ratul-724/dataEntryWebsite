@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <div class="logo"><a href="index.html"><img src="media/rh-logo.png" alt="logo" height="40px"></a></div>
+        <div class="logo"><a href="index.html"><img src="media/logo.png" alt="logo" height="50px"></a></div>
         <div class="header-icons">
-            <div class="dark-mode "><a href="#"><img src="media/icons/moon.png" alt="dark" height="30px"></a></div>
+            <!-- <div class="dark-mode "><a href="#"><img src="media/icons/moon.png" alt="dark" height="30px"></a></div> -->
             <div class="user-icon"><a href="user.html"><img src="media/icons/user.png" alt="user" height="30px"></a></div>
         </div>
     </header>
@@ -47,61 +47,14 @@
                   <form id="loginForm" >
                   <h2 class="text-center text-success fw-semibold pb-2">Sign In</h2>
                   <div class="form-outline mb-4">
-                      <input type="email" id="loginEmail" class="form-control" placeholder="Email" required />
+                      <input type="text" id="loginEmail" class="form-control" placeholder="User ID" required />
                   </div>
                   <div class="form-outline mb-4">
                       <input type="password" id="loginPassword" class="form-control" placeholder="Password" required />
                   </div>
-                  <!-- 2 column grid layout for inline styling -->
-                  <div class="row mb-4">
-                      <div class="col d-flex justify-content-center">
-                          <!-- Checkbox -->
-                          <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="" id="loginRememberMe" checked />
-                              <label class="form-check-label" for="loginRememberMe"> Remember me </label>
-                          </div>
-                      </div>
-                  </div>
                   <!-- Submit button -->
                   <button type="submit" class="btn btn-success btn-block mb-4 signInBtn">Sign In</button>
-                  <!-- Register buttons -->
-                  <div class="text-center">
-                      <p>Don't have an account? <a href="#!" id="goToRegister">Register</a></p>
-                  </div>
               </form>
-                </div>
-                <div id="register" class="hide">
-                    <form id="registerForm">
-                      <h2 class="text-center text-success fw-semibold pb-2">Registration</h2>
-                        <div class="form-outline mb-4">
-                            <input type="text" id="registerUsername" class="form-control" placeholder="Username" required />
-                        </div>
-                        <div class="form-outline mb-4">
-                            <input type="email" id="registerEmail" class="form-control" placeholder="Email" required />
-                        </div>
-                        <div class="form-outline mb-4">
-                            <input type="password" id="registerPassword" class="form-control" placeholder="Password" required />
-                        </div>
-                        <div class="form-outline mb-4">
-                            <input type="password" id="registerConfirmPassword" class="form-control" placeholder="Re-enter your password" required />
-                        </div>
-                        <!-- 2 column grid layout for inline styling -->
-                        <div class="row mb-4">
-                            <div class="col d-flex justify-content-center">
-                                <!-- Checkbox -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="registerRememberMe" checked />
-                                    <label class="form-check-label" for="registerRememberMe"> Remember me </label>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Submit button -->
-                        <button type="submit" class="btn btn-success btn-block mb-4 signInBtn">Register</button>
-                        <!-- Register buttons -->
-                        <div class="text-center">
-                            <p>already have an account? <a href="#!" id="goToSignIn">Sign In</a></p>
-                        </div>
-                    </form>
                 </div>
             </section>
         </main>

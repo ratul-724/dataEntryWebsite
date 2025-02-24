@@ -1,0 +1,53 @@
+.table-resizable {
+    overflow: hidden;
+}
+
+.table-resizable th {
+    position: relative;
+}
+
+.table-resizable th::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    cursor: col-resize;
+    background-color: transparent;
+}
+
+.table-resizable th.resizing::after {
+    background-color: #000;
+}
+
+.table-resizable th.resizing {
+    border-right: 2px solid #000;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+}
+#dataDisplay{
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #036318 #d0cfcf;
+}
+
+/* responsive design */
+@media screen and (max-width: 768px) {
+    #dataDisplay{
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: #036318 #d0cfcf;
+    }
+    .dataPageTop h2{
+        font-size: 16px;
+    }
+    .clearUploadBtn button{
+        font-size: 12px;
+        padding: 5px;
+    }
+}
