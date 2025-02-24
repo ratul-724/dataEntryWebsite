@@ -59,23 +59,23 @@
                                     <h2 class="text-center mb-4">Medical Examination Form</h2>
                                     <form action="#" method="POST" >
                                         <div class="mb-3">
-                                            <label for="date" class="form-label">Date</label>
-                                            <input type="date" id="date" name="date" class="form-control border-black">
+                                            <label for="date" class="form-label">Date*</label>
+                                            <input type="date" id="date" name="date" class="form-control border-black" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="id" class="form-label">ID</label>
+                                            <label for="id" class="form-label">ID*</label>
                                             <input type="text" id="id" name="id" class="form-control border-black" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="name" class="form-label">Name</label>
+                                            <label for="name" class="form-label">Name*</label>
                                             <input type="text" id="name" name="name" class="form-control border-black" required >
                                         </div>
                                         <div class="mb-3">
-                                            <label for="passport" class="form-label">Passport Number</label>
+                                            <label for="passport" class="form-label">Passport Number*</label>
                                             <input type="text" id="passport" name="passport" class="form-control border-black" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="agent" class="form-label">Agent</label>
+                                            <label for="agent" class="form-label">Agent*</label>
                                             <input type="text" id="agent" name="agent" class="form-control border-black">
                                         </div>
                                         <div class="mb-3">
@@ -103,18 +103,15 @@
                                             </select>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="final" class="form-label m-0 ">Final Report</label>
-                                            <!-- <input type="text" id="final" name="final" class="form-control m-0 "> -->
-                                            <select name="" id="" class="w-100">
-                                                <option value="FIT">FIT</option>
-                                                <option value="UNFIT">UNFIT</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
                                             <label for="remarks" class="form-label">Remarks</label>
                                             <textarea id="remarks" name="remarks" class="form-control border-black" rows="2"></textarea>
                                         </div>
-                
+                                        
+                                        <div class="mb-3">
+                                            <label for="agentRate" class="form-label m-0">Agent Rate</label>
+                                            <input type="text" id="agentRate" name="agentRate" class="form-control border-black" required>
+                                        </div>
+
                                         <button type="submit" class="btn btn-primary w-100">Submit</button>
                                     </form>
                                 </div>
