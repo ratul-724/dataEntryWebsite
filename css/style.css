@@ -74,22 +74,6 @@ main {
 #loginAndRegister .signInBtn{
     width: 100%;
 }
-
-@media (max-width: 768px) {
-    #loginAndRegister{
-        width: 100%;
-        display: flex;
-        /* margin-left: -50px; */
-        /* padding: 0px 20px 50px 0px; */
-        justify-content: center;
-        font-size: 13px;
-    }
-    #loginAndRegister form{
-        background-color: #d5f3b8;
-        padding: 20px;
-        border-radius: 10px;
-        margin-left: 60px;
-        /* margin-top: 60px; */
-        width: 100%;
-    }
+.hide{
+    display: none;
 }
