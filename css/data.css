@@ -1,29 +1,3 @@
-.table-resizable {
-    overflow: hidden;
-}
-
-.table-resizable th {
-    position: relative;
-}
-
-.table-resizable th::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 5px;
-    cursor: col-resize;
-    background-color: transparent;
-}
-
-.table-resizable th.resizing::after {
-    background-color: #000;
-}
-
-.table-resizable th.resizing {
-    border-right: 2px solid #000;
-}
 main{
     min-height: 100vh;
     width: 100%;
