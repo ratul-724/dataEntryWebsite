@@ -2,10 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     let users = JSON.parse(localStorage.getItem('users')) || [];
+    console.log(users);
 
     // Ensure there is always at least one admin user
     if (!users.some(user => user.role === 'admin')) {
-        users.push({ agentName: 'admin', password: 'admin123', role: 'admin' });
+        users.push({ agentName: 'alihossain', password: 'alihossain7240', role: 'admin' });
         localStorage.setItem('users', JSON.stringify(users));
         console.log('Admin user added to ensure access.');
     }
