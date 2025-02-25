@@ -13,7 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderTable = () => {
         dataDisplay.innerHTML = '';
-        if (formDataArray.length > 0) {
+        const filteredData = loggedInUser.role === 'admin' ? formDataArray : formDataArray.filter(data => data.agent === loggedInUser.agentName);
+
+        if (filteredData.length > 0) {
             const table = document.createElement('table');
             table.classList.add('table', 'table-bordered', 'table-striped');
 
@@ -24,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const headers = ['medicalName', 'date', 'id', 'name', 'passport', 'agent', 'physical', 'radiology', 'laboratory', 'remarks', 'agentRate'];
 
             headers.forEach(headerText => {
-                const th = document.createElement('th');    
+                const th = document.createElement('th');
                 th.textContent = headerText.charAt(0).toUpperCase() + headerText.slice(1);
                 headerRow.appendChild(th);
             });
@@ -37,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             thead.appendChild(headerRow);
 
-            formDataArray.forEach((formData, index) => {
+            filteredData.forEach((formData, index) => {
                 const dataRow = document.createElement('tr');
                 headers.forEach(header => {
                     const td = document.createElement('td');
@@ -84,10 +86,4 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Data uploaded to the database!');
         });
     }
-});
-
-document.getElementById('logout').addEventListener('click', () => {
-    localStorage.removeItem('loggedInUser');
-    alert('Logged out successfully.');
-    window.location.href = 'user.html';
 });

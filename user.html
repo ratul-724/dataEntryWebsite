@@ -46,7 +46,7 @@
                     <form id="loginForm">
                         <h2 class="text-center text-success fw-semibold pb-2">Sign In</h2>
                         <div class="form-outline mb-4">
-                            <input type="email" id="loginEmail" class="form-control" placeholder="Email" required />
+                            <input type="text" id="loginAgentName" class="form-control" placeholder="Agent Name" required />
                         </div>
                         <div class="form-outline mb-4">
                             <input type="password" id="loginPassword" class="form-control" placeholder="Password" required />
@@ -54,11 +54,11 @@
                         <button type="submit" class="btn btn-success btn-block mb-4 signInBtn">Sign In</button>
                     </form>
                 </div>
-                <div id="register">
+                <div id="register" style="display: none;">
                     <form id="registerForm">
                         <h2 class="text-center text-success fw-semibold pb-2">Register User</h2>
                         <div class="form-outline mb-4">
-                            <input type="email" id="registerEmail" class="form-control" placeholder="Email" required />
+                            <input type="text" id="registerAgentName" class="form-control" placeholder="Agent Name" required />
                         </div>
                         <div class="form-outline mb-4">
                             <input type="password" id="registerPassword" class="form-control" placeholder="Password" required />
@@ -66,7 +66,23 @@
                         <button type="submit" class="btn btn-success btn-block mb-4 w-100">Register</button>
                     </form>
                 </div>
+                
             </section>
+            <div id="userList">
+                <h2 class="text-center text-success fw-semibold pb-2">Registered Users</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Agent Name</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody">
+                        <!-- User rows will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
         </main>
     </div>
     <script src="js/user.js"></script>
